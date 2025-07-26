@@ -1,0 +1,106 @@
+@import url("https://fonts.cdnfonts.com/css/big-shoulders-display");
+@import url("https://fonts.cdnfonts.com/css/outfit");
+@import "tailwindcss";
+
+@theme {
+	/* art gallery breakpoints */
+	--breakpoint-xl: 90rem;
+
+	/* art gallery fonts */
+	--font-big-shoulders-display: "Big Shoulders Display", sans-serif;
+	--font-outfit: "Outfit", sans-serif;
+
+	/* art gallery colors */
+	--color-artg-white: #ffffff;
+	--color-artg-gray-700: #444444;
+	--color-artg-gray-900: #151515;
+	--color-artg-gold-500: #d5966c;
+}
+
+@layer components {
+	/* art gallery typography */
+	.artg-typo-1 {
+		@apply text-6xl leading-[90%] font-black;
+
+		@variant md {
+			@apply text-[4.375rem];
+		}
+
+		@variant xl {
+			@apply text-8xl;
+		}
+	}
+	.artg-typo-2 {
+		@apply text-[3.4375rem] leading-[90%] font-black;
+
+		@variant xl {
+			@apply text-[4.375rem] leading-[100%];
+		}
+	}
+	.artg-typo-3 {
+		@apply text-[3.125rem] leading-[90%] font-black;
+
+		@variant xl {
+			@apply text-6xl leading-[100%];
+		}
+	}
+	.artg-typo-4 {
+		@apply text-4xl leading-[100%] font-black;
+	}
+	.artg-typo-5 {
+		@apply text-[1.375rem] leading-[140%] font-light;
+	}
+	.artg-typo-6 {
+		@apply text-xl leading-[100%] font-extrabold;
+	}
+	.artg-typo-7 {
+		@apply text-lg leading-[140%] font-light;
+	}
+
+	/* art gallery logo */
+	.artg-logo {
+		@apply h-10;
+
+		@variant xl {
+			@apply h-14.5;
+		}
+	}
+
+	/* art gallery buttons */
+	.artg-btn {
+		@apply bg-artg-gray-900 text-artg-white font-outfit flex items-center text-xl leading-[100%] font-extrabold uppercase transition;
+
+		@variant * {
+			@variant first {
+				@apply px-8 py-6;
+			}
+
+			@variant last {
+				@apply bg-artg-gold-500 flex items-center justify-center self-stretch px-6 transition;
+			}
+		}
+
+		@variant hover {
+			@apply bg-artg-gold-500 text-artg-white cursor-pointer;
+
+			@variant * {
+				@variant last {
+					@apply bg-artg-gray-900;
+				}
+			}
+		}
+
+		@variant focus {
+			@apply outline-artg-gold-500 outline-4 outline-offset-3;
+		}
+	}
+
+	/* art gallery icons */
+	.artg-icon {
+		@apply flex size-8 items-center justify-center bg-slate-500;
+
+		svg {
+			@apply fill-current;
+		}
+	}
+}
