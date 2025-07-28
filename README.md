@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repository](https://github.com/amjadham001/art-gallery-landing-page.git)
-- Live Site URL: [Live Demo](https://amjadham001.github.io/art-gallery-landing-page/)
+- Solution URL: [GitHub Repository](https://github.com/amjadham001/art-gallery-website.git)
+- Live Site URL: [Live Demo](https://amjadham001.github.io/art-gallery-website/)
 
 ## My process
 
