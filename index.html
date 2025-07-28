@@ -14,29 +14,244 @@
 
 		<title>Frontend Mentor | Art gallery website</title>
 	</head>
+
 	<body>
-		<!-- 
-  Modern Art Gallery
+		<div id="home-page">
+			<header
+				class="grid grid-cols-[1fr_16px_minmax(288px,343px)_16px_1fr] gap-y-8 md:grid-cols-[1fr_40px_349px_48px_292px_40px_1fr] md:grid-rows-[repeat(5,auto)] md:gap-y-12 xl:grid-cols-[1fr_165px_285px_229px_246px_66px_284px_165px_1fr] xl:grid-rows-[189px_66px_106px_49px_64px_auto_auto] xl:gap-y-0"
+			>
+				<div
+					class="max-xl:hidden xl:col-span-2 xl:col-start-2 xl:row-span-full"
+				>
+					<div class="xl:bg-art-gray-900 xl:h-200"></div>
+				</div>
 
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
+				<div
+					class="col-start-2 -col-end-2 md:col-end-5 md:row-span-full xl:col-start-4 xl:col-end-7 xl:row-span-full"
+				>
+					<picture>
+						<source
+							media="(min-width: 90rem)"
+							srcset="../assets/desktop/image-hero.jpg"
+						/>
+						<source
+							media="(min-width: 48rem)"
+							srcset="../assets/tablet/image-hero.jpg"
+						/>
+						<img
+							class="h-60 md:h-175 xl:h-200"
+							src="../assets/mobile/image-hero.jpg"
+							alt=""
+						/>
+					</picture>
+				</div>
 
-  Our location
+				<div
+					class="col-start-3 -col-end-3 md:col-start-4 md:row-start-2 xl:col-start-3 xl:col-end-5 xl:row-span-2 xl:row-start-2"
+				>
+					<h1
+						class="art-typo-1 font-big-shoulders-display text-art-gray-900 xl:from-art-white xl:to-art-gray-900 uppercase xl:bg-linear-to-r xl:from-[285px] xl:to-[285px] xl:bg-clip-text xl:px-1 xl:text-transparent"
+					>
+						Modern <br />
+						Art Gallery
+					</h1>
+				</div>
 
-  Your day at the gallery
+				<div
+					class="col-start-3 -col-end-3 md:col-start-4 md:row-start-3 xl:col-start-6 xl:col-end-8 xl:row-span-2 xl:row-start-3"
+				>
+					<p class="art-typo-5 text-art-gray-700">
+						The arts in the collection of the Modern Art Gallery all started
+						from a spark of inspiration. Will these pieces inspire you? Visit us
+						and find out.
+					</p>
+				</div>
 
-  Wander through our distinct collections and find new insights about 
-  our artists. Dive into the details of their creative process.
+				<div
+					class="col-start-3 -col-end-3 md:col-start-4 md:row-start-4 xl:col-start-6 xl:col-end-8 xl:row-start-6"
+				>
+					<button class="art-btn group/btn">
+						<span>Our Location</span>
+						<span>
+							<svg
+								class="group-rtl/btn:rotate-180"
+								width="10"
+								height="24"
+								viewBox="0 0 10 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path stroke="currentColor" fill="none" d="m1 0 8 12-8 12" />
+							</svg>
+						</span>
+					</button>
+				</div>
+			</header>
 
-  Come &amp; be inspired
+			<main>
+				<section class="py-25 md:py-30 xl:py-45">
+					<div
+						class="grid grid-cols-[1fr_16px_minmax(288px,343px)_16px_1fr] md:grid-cols-[1fr_40px_223px_68px_107px_12px_279px_40px_1fr] md:gap-y-3 xl:grid-cols-[1fr_40px_350px_125px_159px_32px_445px_40px_1fr] xl:gap-y-8"
+					>
+						<div class="col-start-3 -col-end-3 md:col-end-4 md:self-center">
+							<div class="space-y-6 max-md:mb-8 xl:space-y-8">
+								<h2
+									class="art-typo-3 font-big-shoulders-display text-art-gray-900 uppercase"
+								>
+									Your day at the gallery
+								</h2>
 
-  We’re excited to welcome you to our gallery and see how our collections 
-  influence you.
+								<p class="art-typo-5 text-art-gray-700">
+									Wander through our distinct collections and find new insights
+									about our artists. Dive into the details of their creative
+									process.
+								</p>
+							</div>
+						</div>
 
-  Modern Art Gallery
+						<div class="col-start-3 -col-end-3 max-md:-order-1 md:col-start-5">
+							<div class="h-80 max-md:mb-6 md:h-100">
+								<picture>
+									<source
+										media="(min-width: 90rem)"
+										srcset="../assets/desktop/image-grid-1.jpg"
+									/>
+									<source
+										media="(min-width: 48rem)"
+										srcset="../assets/tablet/image-grid-1.jpg"
+									/>
+									<img
+										class="size-full object-cover"
+										src="../assets/mobile/image-grid-1.jpg"
+										alt=""
+									/>
+								</picture>
+							</div>
+						</div>
 
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA. -->
+						<div class="col-start-3 -col-end-3 md:col-end-6 md:row-span-2">
+							<div class="h-120 max-md:mb-4 md:h-180">
+								<picture>
+									<source
+										media="(min-width: 90rem)"
+										srcset="../assets/desktop/image-grid-2.jpg"
+									/>
+									<source
+										media="(min-width: 48rem)"
+										srcset="../assets/tablet/image-grid-2.jpg"
+									/>
+									<img
+										class="size-full object-cover"
+										src="../assets/mobile/image-grid-2.jpg"
+										alt=""
+									/>
+								</picture>
+							</div>
+						</div>
+
+						<div class="col-start-3 -col-end-3 md:col-start-7">
+							<div class="h-50 max-md:mb-4 md:h-78">
+								<picture>
+									<source
+										media="(min-width: 90rem)"
+										srcset="../assets/desktop/image-grid-3.jpg"
+									/>
+									<source
+										media="(min-width: 48rem)"
+										srcset="../assets/tablet/image-grid-3.jpg"
+									/>
+									<img
+										class="size-full object-cover"
+										src="../assets/mobile/image-grid-3.jpg"
+										alt=""
+									/>
+								</picture>
+							</div>
+						</div>
+
+						<div class="col-start-3 -col-end-3 md:col-start-7">
+							<div
+								class="bg-art-gray-900 text-art-white space-y-6 px-6 py-12 md:min-h-99 md:content-center md:px-8 md:py-20 xl:min-h-94 xl:px-12 xl:py-16"
+							>
+								<h2 class="art-typo-3 font-big-shoulders-display uppercase">
+									Come &amp; be inspired
+								</h2>
+
+								<p class="art-typo-5">
+									We’re excited to welcome you to our gallery and see how our
+									collections influence you.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<footer class="bg-art-gray-900 text-art-white py-12 xl:py-20">
+				<div
+					class="grid grid-cols-[1fr_40px_minmax(240px,295px)_40px_1fr] md:grid-cols-[1fr_40px_688px_40px_1fr] xl:grid-cols-[1fr_165px_1110px_165px_1fr]"
+				>
+					<div
+						class="col-start-3 -col-end-3 flex flex-col gap-10 md:flex-row md:justify-between"
+					>
+						<div class="flex flex-col gap-16 md:flex-row xl:gap-35">
+							<a class="block w-fit" href="#">
+								<img class="art-logo" src="../assets/logo-light.svg" alt="" />
+							</a>
+
+							<p class="art-typo-7 text-art-white md:basis-69 xl:basis-107.5">
+								The Modern Art Gallery is free to all visitors and open seven
+								days a week from 8am to 9pm. Find us at 99 King Street, Newport,
+								USA.
+							</p>
+						</div>
+
+						<ul class="flex gap-5">
+							<li>
+								<a class="art-icon" href="#">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="art-icon" href="#">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a class="art-icon" href="#">
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 17"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+										/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</body>
 </html>

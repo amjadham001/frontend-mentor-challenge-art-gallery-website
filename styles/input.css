@@ -11,15 +11,15 @@
 	--font-outfit: "Outfit", sans-serif;
 
 	/* art gallery colors */
-	--color-artg-white: #ffffff;
-	--color-artg-gray-700: #444444;
-	--color-artg-gray-900: #151515;
-	--color-artg-gold-500: #d5966c;
+	--color-art-white: #ffffff;
+	--color-art-gray-700: #444444;
+	--color-art-gray-900: #151515;
+	--color-art-gold-500: #d5966c;
 }
 
 @layer components {
 	/* art gallery typography */
-	.artg-typo-1 {
+	.art-typo-1 {
 		@apply text-6xl leading-[90%] font-black;
 
 		@variant md {
@@ -28,47 +28,54 @@
 
 		@variant xl {
 			@apply text-8xl;
+
+			word-spacing: -5px;
+			letter-spacing: 0.25px;
 		}
 	}
-	.artg-typo-2 {
+	.art-typo-2 {
 		@apply text-[3.4375rem] leading-[90%] font-black;
 
 		@variant xl {
 			@apply text-[4.375rem] leading-[100%];
 		}
 	}
-	.artg-typo-3 {
+	.art-typo-3 {
 		@apply text-[3.125rem] leading-[90%] font-black;
 
 		@variant xl {
 			@apply text-6xl leading-[100%];
 		}
 	}
-	.artg-typo-4 {
+	.art-typo-4 {
 		@apply text-4xl leading-[100%] font-black;
 	}
-	.artg-typo-5 {
-		@apply text-[1.375rem] leading-[140%] font-light;
+	.art-typo-5 {
+		@apply text-lg leading-[140%] font-light;
+
+		@variant xl {
+			@apply text-[1.375rem];
+		}
 	}
-	.artg-typo-6 {
-		@apply text-xl leading-[100%] font-extrabold;
+	.art-typo-6 {
+		@apply text-xl leading-[100%] font-extrabold tracking-[3.64px];
 	}
-	.artg-typo-7 {
+	.art-typo-7 {
 		@apply text-lg leading-[140%] font-light;
 	}
 
 	/* art gallery logo */
-	.artg-logo {
-		@apply h-10;
+	.art-logo {
+		@apply min-h-10 min-w-27.75;
 
 		@variant xl {
-			@apply h-14.5;
+			@apply min-h-14.5 min-w-40.25;
 		}
 	}
 
 	/* art gallery buttons */
-	.artg-btn {
-		@apply bg-artg-gray-900 text-artg-white font-outfit flex items-center text-xl leading-[100%] font-extrabold uppercase transition;
+	.art-btn {
+		@apply bg-art-gray-900 text-art-white font-big-shoulders-display flex items-center text-xl leading-[100%] font-extrabold tracking-[3.64px] uppercase transition;
 
 		@variant * {
 			@variant first {
@@ -76,31 +83,35 @@
 			}
 
 			@variant last {
-				@apply bg-artg-gold-500 flex items-center justify-center self-stretch px-6 transition;
+				@apply bg-art-gold-500 flex items-center justify-center self-stretch px-6 transition;
 			}
 		}
 
 		@variant hover {
-			@apply bg-artg-gold-500 text-artg-white cursor-pointer;
+			@apply bg-art-gold-500 text-art-white cursor-pointer;
 
 			@variant * {
 				@variant last {
-					@apply bg-artg-gray-900;
+					@apply bg-art-gray-900;
 				}
 			}
 		}
 
 		@variant focus {
-			@apply outline-artg-gold-500 outline-4 outline-offset-3;
+			@apply outline-art-gold-500 outline-4 outline-offset-3;
 		}
 	}
 
 	/* art gallery icons */
-	.artg-icon {
-		@apply flex size-8 items-center justify-center bg-slate-500;
+	.art-icon {
+		@apply flex size-6 items-center justify-center transition;
 
 		svg {
 			@apply fill-current;
+		}
+
+		@variant hover {
+			@apply scale-110;
 		}
 	}
 }
