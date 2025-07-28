@@ -75,7 +75,7 @@
 
 	/* art gallery buttons */
 	.art-btn {
-		@apply bg-art-gray-900 text-art-white font-big-shoulders-display flex items-center text-xl leading-[100%] font-extrabold tracking-[3.64px] uppercase transition;
+		@apply bg-art-gray-900 text-art-white font-big-shoulders-display flex w-fit items-center text-xl leading-[100%] font-extrabold tracking-[3.64px] uppercase transition;
 
 		@variant * {
 			@variant first {
