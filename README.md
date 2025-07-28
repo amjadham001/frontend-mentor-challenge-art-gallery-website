@@ -10,8 +10,6 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
@@ -28,12 +26,22 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- [home-page mobile screenshot](./screenshots/mobile_home_page.png)
+- [location-page mobile screenshot](./screenshots/mobile_location_page.png)
+- [home-page tablet screenshot](./screenshots/tablet_home_page.png)
+- [location-page tablet screenshot](./screenshots/tablet_location_page.png)
+- [home-page desktop screenshot](./screenshots/desktop_home_page.png)
+- [location-page desktop screenshot](./screenshots/desktop_location_page.png)
+- [home-page grid screenshot](./screenshots/grid_home_page.png)
+- [location-page grid screenshot](./screenshots/grid_location_page.png)
+- [button hover state screenshot](./screenshots/btn_hover_state.png)
+- [button foucs state screenshot](./screenshots/btn_foucs_state.png)
+- [button foucs & hover state screenshot](./screenshots/btn_foucs_hover_state.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Repository](https://github.com/amjadham001/art-gallery-landing-page.git)
+- Live Site URL: [Live Demo](https://amjadham001.github.io/art-gallery-landing-page/)
 
 ## My process
 
@@ -43,30 +51,20 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- [Tailwindcss](https://tailwindcss.com/) - CSS framework
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Figma](https://www.figma.com/) - This tool helped me to view and inspect the design in more detail such as `font-size`, `padding` and `margin`, to get a perfect and consistent result.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Github - [@amjadham001](https://github.com/amjadham001)
+- Frontend Mentor - [@amjadham001](https://www.frontendmentor.io/profile/amjadham001)
+- Twitter - [@amjadham001](https://x.com/amjadham001)
+- Codepen - [@amjadham001](https://codepen.io/amjadham001)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+To everyone who taught me a letter 🌹...
